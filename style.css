@@ -1,0 +1,84 @@
+:root {
+    --main: #4A2C2A;
+    --bg: #FBF7F1;
+    --accent: #FFC94A;
+    --white: #ffffff;
+    --text: #1E1413;
+}
+
+* { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; border: none; outline: none; }
+html { font-size: 62.5%; scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); overflow-x: hidden; }
+
+.header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--main); display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 9%; }
+.header .logo { font-size: 2.2rem; color: var(--white) !important; font-weight: 700; display: flex; align-items: center; }
+.header .logo img { height: 4rem; margin-right: 1.2rem; border-radius: 50%; }
+.header .navbar a { font-size: 1.7rem; color: var(--white) !important; margin-left: 2rem; transition: .3s; }
+.header .navbar a:hover { color: var(--accent) !important; }
+
+.home { min-height: 100vh; display: flex; align-items: center; flex-wrap: wrap; background: var(--main); padding: 10rem 9% 5rem; }
+.home .content { flex: 1 1 45rem; }
+.home .content h1 { font-size: 5rem; color: var(--white); line-height: 1.2; font-weight: 700; }
+.home .content p { font-size: 1.8rem; color: #D7CCC8; padding: 2rem 0; }
+.home .home-image { flex: 1 1 45rem; text-align: center; }
+.home .home-image img { width: 100%; max-width: 40rem; }
+
+.btn { display: inline-block; padding: 1.2rem 3rem; font-size: 1.6rem; font-weight: 600; border-radius: .5rem; cursor: pointer; transition: .3s; text-align: center; }
+.primary-btn { background: var(--accent) !important; color: var(--main) !important; }
+.secondary-btn { border: 2px solid var(--white) !important; color: var(--white) !important; background: transparent; margin-left: 1rem; }
+
+.about { padding: 10rem 9%; }
+.heading { text-align: center; font-size: 3.5rem; color: var(--main); margin-bottom: 6rem; font-weight: 700; text-transform: uppercase; }
+.about-wrapper { display: flex; align-items: center; gap: 8rem; flex-wrap: wrap; }
+.about-image-frame { flex: 1 1 45rem; }
+.about-image-frame img { width: 100%; border-radius: 2rem; box-shadow: 2rem 2rem 0 var(--accent); }
+.about-text-content { flex: 1 1 40rem; }
+.about-text-content p { font-size: 2.2rem; line-height: 1.7; color: var(--text); margin-bottom: 4rem; text-align: justify; }
+.social-connect { border-left: 4px solid var(--accent); padding-left: 2rem; }
+.social-connect span { font-size: 1.6rem; font-weight: 600; color: var(--main); display: block; margin-bottom: 1.5rem; }
+.social-icons-row { display: flex; gap: 2.5rem; }
+.social-icons-row a { font-size: 3.2rem; color: var(--main) !important; transition: .3s; }
+
+.menu { background: var(--main); padding: 10rem 9%; }
+.menu .heading { color: var(--white); }
+.box-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); gap: 3rem; }
+.box { background: var(--white); padding: 3rem; border-radius: 2.5rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between; transition: .3s; }
+.box:hover { transform: translateY(-1rem); }
+.square-frame { width: 100%; aspect-ratio: 1/1; border-radius: 2rem; overflow: hidden; position: relative; margin-bottom: 2rem; }
+.square-frame img { width: 100%; height: 100%; object-fit: cover; }
+.box h3 { font-size: 2.2rem; margin-bottom: 1rem; color: var(--main); font-weight: 700; }
+.box p { font-size: 1.5rem; margin-bottom: 2rem; color: var(--text); }
+
+.slide { position: absolute; top:0; left:0; width:100%; height:100%; opacity:0; transition: .5s; }
+.active-slide { opacity: 1; }
+.slider-nav { position: absolute; top:50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; padding: 1rem; cursor: pointer; z-index: 10; border-radius: 50%; }
+.prev { left: 1rem; } .next { right: 1rem; }
+
+.contact { padding: 10rem 9%; display: flex; justify-content: center; background: #F4F0E8; }
+.contact-card { background: var(--white); max-width: 50rem; width: 100%; padding: 6rem 4rem; border-radius: 4rem; text-align: center; box-shadow: 0 3rem 6rem rgba(74, 44, 42, 0.08); }
+.contact-title { font-size: 3.2rem; color: var(--main); margin-bottom: 4rem; font-weight: 700; }
+.social-pills { display: flex; justify-content: center; gap: 2rem; margin-bottom: 4rem; }
+.pill { width: 6.5rem; height: 6.5rem; border-radius: 50%; border: 1.5px solid #eee; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; color: var(--main) !important; transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.pill:hover { background: var(--main); color: var(--accent) !important; transform: scale(1.1) rotate(10deg); }
+.contact-row { display: flex; align-items: center; gap: 2rem; background: #faf8f5; padding: 1.8rem 2.5rem; border-radius: 2rem; margin-bottom: 1.5rem; transition: .3s; }
+.contact-row:hover { background: #f0ebe2; }
+.icon-box { width: 5rem; height: 5rem; background: var(--main); color: var(--accent); border-radius: 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; }
+.details { text-align: left; }
+.details small { display: block; font-size: 1.1rem; color: #999; text-transform: uppercase; font-weight: 700; }
+.details span { font-size: 1.7rem; font-weight: 700; color: var(--main); }
+.wa-premium-btn { margin-top: 3.5rem; background: var(--main); color: white !important; display: flex; align-items: center; justify-content: space-between; padding: 2.4rem 3.5rem; border-radius: 2.5rem; font-size: 1.9rem; font-weight: 700; transition: .3s ease; }
+.wa-premium-btn:hover { background: #35201e; transform: translateY(-5px); box-shadow: 0 1rem 3rem rgba(0,0,0,0.1); }
+
+.footer { background: var(--main); color: white; text-align: center; padding: 4rem; font-size: 1.4rem; }
+
+#menu-btn { display: none; font-size: 2.5rem; color: white; cursor: pointer; }
+@media (max-width: 768px) {
+    #menu-btn { display: block; }
+    .header .navbar { position: absolute; top: 100%; right: -100%; background: var(--main); width: 25rem; height: 100vh; flex-direction: column; padding: 2rem; transition: .3s; }
+    .header .navbar.active { right: 0; }
+    .header .navbar a { display: block; margin: 2rem 0; font-size: 2rem; }
+    .home { padding-top: 15rem; text-align: center; }
+    .about-wrapper { gap: 4rem; }
+    .box-container { grid-template-columns: 1fr; }
+    .contact-card { padding: 4rem 2rem; }
+}
