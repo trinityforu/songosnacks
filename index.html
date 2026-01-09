@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Songosnack - Spesialis Kerupuk Kalsium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/smektom.png" alt="Logo">
+            <span>songosnack</span>
+        </a>
+        <nav class="navbar">
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#menu">Menu</a>
+            <a href="#ingredients">Bahan</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Camilan renyah dan bergizi untuk hari Anda!</h1>
+            <p>Banyak orang mencari camilan renyah, tapi sedikit yang memberikan manfaat nyata bagi tubuh. Kami menghadirkan Inovasi Camilan Kalsium Tinggi yang diolah langsung dari sumber alami, tulang ayam berkualitas</p>
+            <div class="buttons">
+                <a href="#menu" class="btn primary-btn">Lihat Menu</a>
+                <a href="#contact" class="btn secondary-btn">Hubungi Kami</a>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="img/e.png" alt="Hero Logo">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">TENTANG KAMI</h2>
+        <div class="about-wrapper">
+            <div class="about-image-frame">
+                <img src="img/tentang2.jpg" alt="Produk Kami">
+            </div>
+            <div class="about-text-content">
+                <p>Kami hadir untuk menyediakan camilan sehat dan lezat. Kerupuk kalsium kami dibuat dari bahan-bahan pilihan, renyah, dan kaya akan kalsium, cocok untuk menemani setiap aktivitas Anda.</p>
+                <div class="social-connect">
+                    <span>Terhubung dengan kami:</span>
+                    <div class="social-icons-row">
+                        <a href="https://wa.me/+6282229504003" class="fab fa-whatsapp" target="_blank"></a>
+                        <a href="https://www.instagram.com/songosnack" class="fab fa-instagram" target="_blank"></a>
+                        <a href="https://www.tiktok.com/@songosnack" class="fab fa-tiktok" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2 class="heading">MENU PRODUK</h2>
+        <div class="box-container">
+            <div class="box">
+                <div class="square-frame"><img src="img/produk mentah.jpg" alt="Mentah"></div>
+                <h3>Kerupuk Mentah</h3>
+                <p>Siap goreng kapan saja. Hemat, praktis, dan tetap renyah.</p>
+                <a href="https://wa.me/+6282229504003?text=Halo%2C%20saya%20ingin%20memesan%20Kerupuk%20Mentah" class="btn primary-btn" target="_blank">Pesan</a>
+            </div>
+
+            <div class="box">
+                <div class="square-frame slider-container">
+                    <div class="slides">
+                        <div class="slide active-slide"><img src="img/produk matang.jpg" alt="Original"></div>
+                        <div class="slide"><img src="img/produk pedas daun jeruk.jpg" alt="Pedas"></div>
+                    </div>
+                    <button class="slider-nav prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="slider-nav next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+                <h3 id="product-title">Kalsium Original</h3>
+                <p id="product-description">Rasa gurih klasik yang autentik, cemilan sehat kaya kalsium.</p>
+                <a href="#" class="btn primary-btn" id="whatsapp-link" target="_blank">Pesan</a>
+            </div>
+
+            <div class="box">
+                <div class="square-frame"><img src="img/produk teh tarik.png" alt="Teh Tarik"></div>
+                <h3>Teh Tarik</h3>
+                <p>Teh susu kental autentik, menghasilkan buih yang khas.</p>
+                <a href="https://wa.me/+6282229504003?text=Halo%2C%20saya%20ingin%20memesan%20Teh%20Tarik" class="btn primary-btn" target="_blank">Pesan</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="ingredients" id="ingredients">
+        <h2 class="heading">BAHAN BERKUALITAS</h2>
+        <div class="ing-slider">
+            <div class="ing-track">
+                <div class="ing-card"><i class="fas fa-bone"></i><span>Tulang Ayam</span></div>
+                <div class="ing-card"><i class="fas fa-seedling"></i><span>Tepung Tapioka</span></div>
+                <div class="ing-card"><i class="fas fa-apple-alt"></i><span>Bawang Putih</span></div>
+                <div class="ing-card"><i class="fas fa-leaf"></i><span>Sereh</span></div>
+                <div class="ing-card"><i class="fas fa-leaf"></i><span>Daun Jeruk</span></div>
+                <div class="ing-card"><i class="fas fa-mortar-pestle"></i><span>Ketumbar Bubuk</span></div>
+                <div class="ing-card"><i class="fas fa-cube"></i><span>Masako</span></div>
+                <div class="ing-card"><i class="fas fa-cubes"></i><span>Gula</span></div>
+                <div class="ing-card"><i class="fas fa-cloud"></i><span>Garam</span></div>
+                <div class="ing-card"><i class="fas fa-pepper-hot"></i><span>Lada Bubuk</span></div>
+                <div class="ing-card"><i class="fas fa-tint"></i><span>Air</span></div>
+                <div class="ing-card"><i class="fas fa-fire"></i><span>Gas LPG</span></div>
+            </div>
+        </div>
+        <div class="scroll-indicator-container">
+            <div class="scroll-bar" id="scroll-bar"></div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-card">
+            <h2 class="contact-title">Hubungi Kami</h2>
+            <div class="direct-contact">
+                <div class="contact-row">
+                    <div class="icon-box"><i class="fas fa-phone"></i></div>
+                    <div class="details">
+                        <small>Kontak Pemesanan</small>
+                        <span>+62 822-2950-4003</span>
+                    </div>
+                </div>
+                <div class="contact-row">
+                    <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="details">
+                        <small>Lokasi Utama</small>
+                        <span>SMK Unitomo, Surabaya</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://wa.me/+6282229504003" class="wa-premium-btn" target="_blank">
+                <span>Hubungi Sekarang</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Songosnack | Privacy Policy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
